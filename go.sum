@@ -1,0 +1,6 @@
+github.com/pborman/getopt v0.0.0-20200816005738-fd0d075bf4de h1:nnn2ecwIrO+okDTV65M5zutG2oxoXl0PivQTOtfwlaA=
+github.com/pborman/getopt v0.0.0-20200816005738-fd0d075bf4de/go.mod h1:FxXoW1Re00sQG/+KIkuSqRL/LwQgSkv7uyac+STFsbk=
+github.com/pborman/getopt/v2 v2.0.0 h1:Tn8XVmhb93Wbc346Tk4P6KutfpMVp+iztUzkZrTSyB4=
+github.com/pborman/getopt/v2 v2.0.0/go.mod h1:4NtW75ny4eBw9fO1bhtNdYTlZKYX5/tBLtsOpwKIKd0=
+github.com/smarman85/dateRange v0.0.0-20181215233859-9f2139c567b0 h1:yRPPv5W9VT2tMD9WleE8x2Gz/qd16APk6Agl1I996aM=
+github.com/smarman85/dateRange v0.0.0-20181215233859-9f2139c567b0/go.mod h1:KPlMAIWr8YJ7Qw84+FSx/GI0/60QgKBKGONog/MCtmg=
