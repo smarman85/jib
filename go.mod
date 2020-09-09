@@ -1,8 +1,9 @@
-module github.com/smarman85/jib
+module jib
 
 go 1.14
 
 require (
-	github.com/pborman/getopt v0.0.0-20200816005738-fd0d075bf4de
-	github.com/pborman/getopt/v2 v2.0.0
+	github.com/mitchellh/go-homedir v1.1.0
+	github.com/spf13/cobra v1.0.0
+	github.com/spf13/viper v1.7.1
 )
