@@ -24,7 +24,7 @@ import (
 // pipeCmd represents the pipe command
 var pipeCmd = &cobra.Command{
 	Use:   "pipe",
-	Short: "A brief description of your command",
+	Short: "Create a new pipeline",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
@@ -32,12 +32,27 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("pipe called")
-    printHello(args)
+    // get the flag value, its default value is false
+    pipeName, _ := cmd.Flags().GetBool("new")
+
+    if pipeName {
+      newPipeline(args)
+    } else {
+      printHello(args)
+    }
+
 	},
 }
 
 func printHello(args []string) {
+  fmt.Println("Updateing Pipeline")
+  for i, _ := range args {
+    fmt.Println(args[i])
+  }
+}
+
+func newPipeline(args []string) {
+  fmt.Println("Creating new pipeline")
   for i, _ := range args {
     fmt.Println(args[i])
   }
@@ -45,6 +60,7 @@ func printHello(args []string) {
 
 func init() {
 	rootCmd.AddCommand(pipeCmd)
+  pipeCmd.Flags().BoolP("new", "n", false, "create a new pipeline")
 
 	// Here you will define your flags and configuration settings.
 
