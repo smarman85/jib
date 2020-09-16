@@ -19,6 +19,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
+  "jib/pkg/newPipe"
 )
 
 // pipeCmd represents the pipe command
@@ -53,6 +54,7 @@ func printHello(args []string) {
 
 func newPipeline(args []string) {
   fmt.Println("Creating new pipeline")
+  newPipe.Hello()
   for i, _ := range args {
     fmt.Println(args[i])
   }
