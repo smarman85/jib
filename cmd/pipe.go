@@ -53,11 +53,11 @@ func printHello(args []string) {
 }
 
 func newPipeline(args []string) {
-  fmt.Println("Creating new pipeline")
-  newPipe.Hello()
-  for i, _ := range args {
-    fmt.Println(args[i])
-  }
+  //fmt.Println("Creating new pipeline")
+  newPipe.Hello(args)
+  //for i, _ := range args {
+  //  fmt.Println(args[i])
+  //}
 }
 
 func init() {
